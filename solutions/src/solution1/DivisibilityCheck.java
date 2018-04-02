@@ -7,7 +7,6 @@ public class DivisibilityCheck {
   private final int divisor=8;
 
   public static void main(String[] args) {
-    // TODO Auto-generated method stub
     DivisibilityCheck divisibilityCheck= new DivisibilityCheck();
     Scanner sc = new Scanner(System.in);
     int numTests = sc.nextInt();
