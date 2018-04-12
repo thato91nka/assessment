@@ -35,6 +35,7 @@ public class Controller {
     }
     else{
       System.out.println("Product selected is unavailable.");
+      System.exit(0);
     }
   }
 
@@ -57,45 +58,15 @@ public class Controller {
       System.exit(0);
     }
     change = amount - product.getPrice();
+  }
+
+  public void getChange() {
     System.out.println("Your change is :" +formatter.format(change));
-  }
-
-
-  public Double getAmountReceived() {
-    return amountReceived;
-  }
-
-  public void setAmountReceived(Double amountReceived) {
-    this.amountReceived = amountReceived;
-  }
-
-  public String getProductID() {
-    return productID;
-  }
-
-  public void setProductID(String productID) {
-    this.productID = productID;
-  }
-
-  public Product getProduct() {
-    return product;
-  }
-
-  public void setProduct(Product product) {
-    this.product = product;
-  }
-
-  public double getChange() {
-    return change;
-  }
-
-  public void setChange(double change) {
-    this.change = change;
   }
 
   public void displayProducts(){
     for(Product product:products){
-      product.toString();
+      System.out.println(product.toString());
     }
   }
 }

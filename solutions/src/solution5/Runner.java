@@ -19,11 +19,13 @@ public class Runner {
       String productID = sc.next();
       controller.acceptOrder(productID);
       controller.checkValidityProduct();
+      System.out.println();
       System.out.println("Please insert cash:");
       Double inputAmount = sc.nextDouble();
       controller.comparePrice(inputAmount);
       controller.dispenseProduct();
       controller.getChange();
+      System.out.println();
       System.out.println("If you would like to order something else, enter \"Y\"");
       answer = sc.next();
     }
