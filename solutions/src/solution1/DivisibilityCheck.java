@@ -1,5 +1,6 @@
 package solution1;
 
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -12,8 +13,8 @@ public class DivisibilityCheck {
     int numTests = sc.nextInt();
     ArrayList<Integer> output= new ArrayList<>();
     while(numTests>0) {
-      int number = sc.nextInt();
-      output.add(divisibilityCheck.isDivisible(number));
+      BigInteger number =sc.nextBigInteger();
+      boolean add = output.add(divisibilityCheck.isDivisible(number));
       numTests--;
     }
 
@@ -23,10 +24,7 @@ public class DivisibilityCheck {
 
   }
 
-  private int isDivisible(int number){
-    if(number%divisor==0)
-      return 1;
-    else
-      return -1;
+  private int isDivisible(BigInteger number){
+    return number.mod(BigInteger.valueOf(divisor)).equals(BigInteger.ZERO) ? 1 : -1;
   }
 }
