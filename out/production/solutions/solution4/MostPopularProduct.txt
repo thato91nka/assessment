@@ -1,0 +1,5 @@
+
+Create a Hash table with key "productID" and
+
+use a Hash table to record all words' frequency while traverse the whole word sequence.
+In this phase, the key is "word" and the value is "word-frequency"

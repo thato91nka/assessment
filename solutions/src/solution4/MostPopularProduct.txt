@@ -1,0 +1,8 @@
+Create a Product object with id and timestamp.
+Add every product request as into a queue as it comes in.
+When a customer logs in remove all product requests older than 2 hours.
+Create a hash table with key as "productid" and a value as a "counter".
+    i.e Hashtable<productid,counter>
+Iterate through the queue updating the count for the relevant product.
+find the maximum count and  return the corresponding productid.
+
